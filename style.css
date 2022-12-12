@@ -37,6 +37,7 @@ div{
 
 .header h1 {
   font-size: large;
+  padding-left: 80px;
 }
 /* HERO */
 .hero{
@@ -70,7 +71,8 @@ div{
 .hero img {
   /* Så billedet ikke stretcher */
   align-self: center;
-  width: 500px;
+  width: 550px;
+  flex-basis: auto;
 }
 
 .herodiv button{
@@ -94,12 +96,66 @@ div{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 180px;
+  max-width: 250px;
+}
+
+.content img{
+  border: 5px solid #3882f6;
+  border-radius: 10px;
+  width: 120px;
+  height: auto;
 }
 
 .quote{
   display: flex;
-  flex-flow: column flex;
+  flex-flow: column wrap;
   justify-content: center;
+  background-color: #e5e7eb;
+  padding: 70px;
+}
 
+.quote h1{
+  font-size: medium;
+  font-weight:400;
+}
+
+.quote p{
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bolder;
+}
+
+.cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3882f6;
+  color: rgb(255, 255, 255);
+  margin: 100px 70px 100px 70px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.cta-text{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cta button{
+  color: #ffffff;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #3882f6;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+  background-color: #1f2937;
+  font-size: x-small;
+  padding-bottom: 100px;
 }
